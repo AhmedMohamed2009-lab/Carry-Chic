@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carry Chic | Luxury Artisan Handmade Bags</title>
+    <meta name="description" content="Carry Chic is an exclusive handmade luxury bag boutique. Each bag is meticulously handcrafted stitch by stitch with sustainable, premium materials.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/333.jpg">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Master Stylesheet -->
+    <link rel="stylesheet" href="carrychic.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <span>✨ Complimentary Luxury Dust Bag</span> & Free Shipping on orders over $200 | Handcrafted with Love
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="carrychic.html" class="logo-wrapper">
+                <img src="images/333.jpg" alt="Carry Chic Logo" class="brand-logo-img">
+                <div class="brand-title">
+                    Carry Chic
+                    <span class="brand-subtitle">Handmade Boutique</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="carrychic.html" class="active">Home</a></li>
+                    <li><a href="#bags">Collection</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact & Bespoke</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://www.instagram.com/_carry_chic/" target="_blank" class="action-btn" title="Follow on Instagram" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <button class="action-btn" id="open-cart-btn" title="View Shopping Bag" aria-label="Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count" style="display:none;">0</span>
+                </button>
+                <button class="mobile-toggle action-btn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay-decor"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <i class="fa-solid fa-sparkles"></i> Artisan Crafted & Timeless
+                </div>
+                <h1 class="hero-title">
+                    Elegance in Every Stitch, <em>Handmade</em> for You.
+                </h1>
+                <p class="hero-desc">
+                    Discover bespoke handmade bags tailored with passion, slow-crafted using premium organic yarns and refined hardware. Sustainable luxury that elevates every outfit.
+                </p>
+                <div class="hero-actions">
+                    <a href="#bags" class="btn-primary">
+                        <i class="fa-solid fa-bag-shopping"></i> Explore Collection
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Request Custom Design
+                    </a>
+                </div>
+
+                <div class="hero-features-bar">
+                    <div class="hero-feature-item">
+                        <i class="fa-solid fa-check"></i>
+                        <span>100% Handcrafted</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <i class="fa-solid fa-leaf"></i>
+                        <span>Organic & Sustainable</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <i class="fa-solid fa-gem"></i>
+                        <span>Bespoke Hardware</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Craftsmanship Highlights Strip -->
+    <section class="trust-strip">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <div class="trust-info">
+                        <h4>100% Handmade</h4>
+                        <p>Over 15 hours dedicated to crafting each individual bag.</p>
+                    </div>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div class="trust-info">
+                        <h4>Eco-Friendly Materials</h4>
+                        <p>Certified organic cotton cord, natural raffia & cruelty-free trims.</p>
+                    </div>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <div class="trust-info">
+                        <h4>Bespoke Custom Orders</h4>
+                        <p>Personalize your dimensions, lining, colors, and monogram.</p>
+                    </div>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <div class="trust-info">
+                        <h4>Signature Packaging</h4>
+                        <p>Delivered in a keepsake luxury box with protective dust bag.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Collection Section -->
+    <section class="products-section" id="bags">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Capsule Collection</span>
+                <h2 class="section-title">Handmade Masterpieces</h2>
+                <p class="section-desc">
+                    Each design is an artistic statement of individuality and poise. Carefully woven for everyday elegance and grand occasions.
+                </p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Designs</button>
+                <button class="filter-btn" data-filter="crochet">Knit & Crochet</button>
+                <button class="filter-btn" data-filter="tote">Artisan Totes</button>
+                <button class="filter-btn" data-filter="leather">Heritage Crossbody</button>
+                <button class="filter-btn" data-filter="clutch">Evening Clutches</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="products-grid">
+                <!-- Products injected via carrychic.js (with static fallback) -->
+                <div class="product-card">
+                    <div class="card-image-box">
+                        <span class="card-badge badge-gold">Best Seller</span>
+                        <a href="product.html"><img src="images/Bag1.png" alt="Classic Artisan Handbag"></a>
+                        <div class="card-overlay-actions">
+                            <button class="quick-add-btn" onclick="addToCartById('bag-1')">
+                                <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Signature Knit & Crochet</span>
+                        <h3 class="card-title"><a href="product.html">Classic Artisan Handbag</a></h3>
+                        <div class="card-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span class="rating-count">(38)</span>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-price">
+                                <span class="current-price">$120</span>
+                                <span class="original-price">$150</span>
+                            </div>
+                            <a href="product.html" class="view-details-link">Details <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image-box">
+                        <span class="card-badge badge-green">New Arrival</span>
+                        <a href="product2.html"><img src="images/Bag2.jpg" alt="Modern Chic Carry Bag"></a>
+                        <div class="card-overlay-actions">
+                            <button class="quick-add-btn" onclick="addToCartById('bag-2')">
+                                <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Artisan Shoulder Bag</span>
+                        <h3 class="card-title"><a href="product2.html">Modern Chic Carry Bag</a></h3>
+                        <div class="card-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span class="rating-count">(29)</span>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-price">
+                                <span class="current-price">$145</span>
+                                <span class="original-price">$175</span>
+                            </div>
+                            <a href="product2.html" class="view-details-link">Details <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image-box">
+                        <span class="card-badge badge-wine">Trending</span>
+                        <a href="product3.html"><img src="images/Bag3.jpg" alt="Boho Artisan Woven Tote"></a>
+                        <div class="card-overlay-actions">
+                            <button class="quick-add-btn" onclick="addToCartById('bag-3')">
+                                <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Bohemian Weave</span>
+                        <h3 class="card-title"><a href="product3.html">Boho Artisan Woven Tote</a></h3>
+                        <div class="card-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                            <span class="rating-count">(44)</span>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-price">
+                                <span class="current-price">$130</span>
+                                <span class="original-price">$160</span>
+                            </div>
+                            <a href="product3.html" class="view-details-link">Details <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image-box">
+                        <span class="card-badge badge-gold">Limited Edition</span>
+                        <a href="product4.html"><img src="images/Bag4.jpg" alt="Vintage Bloom Crossbody"></a>
+                        <div class="card-overlay-actions">
+                            <button class="quick-add-btn" onclick="addToCartById('bag-4')">
+                                <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Heritage Crossbody</span>
+                        <h3 class="card-title"><a href="product4.html">Vintage Bloom Crossbody</a></h3>
+                        <div class="card-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span class="rating-count">(31)</span>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-price">
+                                <span class="current-price">$110</span>
+                                <span class="original-price">$140</span>
+                            </div>
+                            <a href="product4.html" class="view-details-link">Details <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image-box">
+                        <span class="card-badge badge-wine">Exclusive</span>
+                        <a href="product5.html"><img src="images/Bag5.jpg" alt="Celestial Pearl Knot Bag"></a>
+                        <div class="card-overlay-actions">
+                            <button class="quick-add-btn" onclick="addToCartById('bag-5')">
+                                <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Evening & Occasion</span>
+                        <h3 class="card-title"><a href="product5.html">Celestial Pearl Knot Bag</a></h3>
+                        <div class="card-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span class="rating-count">(26)</span>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-price">
+                                <span class="current-price">$160</span>
+                                <span class="original-price">$195</span>
+                            </div>
+                            <a href="product5.html" class="view-details-link">Details <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image-box">
+                        <span class="card-badge badge-green">Bestseller</span>
+                        <a href="product6.html"><img src="images/Bag6.jpg" alt="Velvet Mirage Chic Clutch"></a>
+                        <div class="card-overlay-actions">
+                            <button class="quick-add-btn" onclick="addToCartById('bag-6')">
+                                <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Luxury Clutch</span>
+                        <h3 class="card-title"><a href="product6.html">Velvet Mirage Chic Clutch</a></h3>
+                        <div class="card-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span class="rating-count">(52)</span>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-price">
+                                <span class="current-price">$135</span>
+                                <span class="original-price">$165</span>
+                            </div>
+                            <a href="product6.html" class="view-details-link">Details <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story & Craftsmanship Section -->
+    <section class="story-section" id="about">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-visual-box">
+                    <img src="images/wallpaper1.jpg" alt="Handcrafted Bag Artistry" class="story-main-img">
+                    <div class="story-badge-floating">
+                        <h4>15+ Hours</h4>
+                        <p>Of patient handcrafting and intricate needlework behind every piece.</p>
+                    </div>
+                </div>
+                <div class="story-content">
+                    <span class="section-subtitle">Our Philosophy</span>
+                    <h2 class="section-title">The Art of Slow Fashion & Pure Artisan Craft</h2>
+                    <p>
+                        At <strong>Carry Chic</strong>, we believe fashion shouldn't be rushed. In an era of mass-produced uniformity, we celebrate the intimate beauty of items created slowly by hand with passion, dedication, and precision.
+                    </p>
+                    <p>
+                        Founded by <strong>Farah Talaat</strong>, our brand brings together timeless aesthetics and contemporary silhouettes. We source pure cotton cords, organic weaves, and brass fittings that age gracefully with you.
+                    </p>
+
+                    <div class="story-features">
+                        <div class="story-feature-item">
+                            <i class="fa-solid fa-ribbon"></i>
+                            <div>
+                                <strong>Zero Mass Production</strong>
+                                <span>Strictly micro-batch and made-to-order releases.</span>
+                            </div>
+                        </div>
+                        <div class="story-feature-item">
+                            <i class="fa-solid fa-feather-pointed"></i>
+                            <div>
+                                <strong>Lightweight & Resilient</strong>
+                                <span>Engineered to maintain structure and carry your essentials effortlessly.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-author-quote">
+                        "Fast fashion fills closets; handcrafted passion tells your story."
+                        <cite>— Farah Talaat, Founder & Creative Artisan</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Client Love</span>
+                <h2 class="section-title">Cherished by Chic Women Everywhere</h2>
+                <p class="section-desc">Read honest reflections from our patrons who carry our pieces across the world.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div>
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "The Classic Artisan Bag is beyond breathtaking. The texture, weight, and subtle sheen are exceptional. I get compliments everywhere I go!"
+                        </p>
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">YM</div>
+                        <div class="author-info">
+                            <h5>Yasmine M.</h5>
+                            <span>Verified Buyer • Cairo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "I ordered a custom Celestial Pearl bag for my sister's wedding. Farah was so attentive to details. The packaging alone felt like receiving haute couture."
+                        </p>
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">SE</div>
+                        <div class="author-info">
+                            <h5>Salma El-Sayed</h5>
+                            <span>Custom Order Client • Dubai</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "The craftsmanship is museum quality. The stitches are uniform, sturdy, and the bag holds its shape perfectly even with my heavy laptop inside."
+                        </p>
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">NR</div>
+                        <div class="author-info">
+                            <h5>Nouran Rashed</h5>
+                            <span>Verified Buyer • Alexandria</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Showcase Grid -->
+    <section class="social-showcase" id="social">
+        <div class="container">
+            <span class="section-subtitle">Visual Diary</span>
+            <h2 class="section-title">Follow Our Artisan Journey</h2>
+            <a href="https://www.instagram.com/_carry_chic/" target="_blank" class="insta-handle-badge">
+                <i class="fa-brands fa-instagram"></i> @_carry_chic
+            </a>
+
+            <div class="insta-grid">
+                <a href="product.html" class="insta-item">
+                    <img src="images/Bag1.png" alt="Carry Chic Bag 1">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                </a>
+                <a href="product2.html" class="insta-item">
+                    <img src="images/Bag2.jpg" alt="Carry Chic Bag 2">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                </a>
+                <a href="product3.html" class="insta-item">
+                    <img src="images/Bag3.jpg" alt="Carry Chic Bag 3">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                </a>
+                <a href="product4.html" class="insta-item">
+                    <img src="images/Bag4.jpg" alt="Carry Chic Bag 4">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                </a>
+                <a href="product5.html" class="insta-item">
+                    <img src="images/Bag5.jpg" alt="Carry Chic Bag 5">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                </a>
+                <a href="product6.html" class="insta-item">
+                    <img src="images/Bag6.jpg" alt="Carry Chic Bag 6">
+                    <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Got Questions?</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-desc">Everything you need to know about our handcrafted process, care, and delivery.</p>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item open">
+                    <div class="faq-header">
+                        <span>How long does it take to make and deliver a bag?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-body">
+                        In-stock pieces ship within 24 to 48 hours. Bespoke or customized orders require approximately 5 to 8 business days to handcraft from scratch before dispatch.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>Can I request a custom color or monogram?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-body">
+                        Yes! We love bespoke projects. You can select custom cord shades, hardware finishes (gold, brass, silver), and custom hand-stitched monograms. Use our contact form below or reach out via WhatsApp.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>How do I clean and care for my handmade bag?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-body">
+                        We recommend gentle spot cleaning with a damp cloth and mild eco-friendly detergent. Store your bag inside the provided luxury dust bag stuffed with tissue paper to preserve its sculptural shape.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-body">
+                        We accept Cash on Delivery (COD), InstaPay, Mobile Wallets, and Credit/Debit Cards. Orders can also be confirmed directly via WhatsApp.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Custom Inquiries Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info-col">
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h3>Let's Craft Your Dream Bag</h3>
+                    <p>
+                        Have a specific color palette in mind? Need a statement bag for an upcoming gala or bridal event? Send us a note or chat with Farah directly.
+                    </p>
+
+                    <div class="contact-details-list">
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div class="contact-detail-text">
+                                <h5>Direct WhatsApp</h5>
+                                <a href="https://wa.me/" target="_blank">Chat with our Designer</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fa-brands fa-instagram"></i></div>
+                            <div class="contact-detail-text">
+                                <h5>Instagram DM</h5>
+                                <a href="https://www.instagram.com/_carry_chic/" target="_blank">@_carry_chic</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-detail-text">
+                                <h5>Email Support</h5>
+                                <span>hello@carrychic.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-pills">
+                        <a href="https://www.instagram.com/_carry_chic/" target="_blank" class="social-pill">
+                            <i class="fa-brands fa-instagram"></i> Instagram
+                        </a>
+                        <a href="https://www.instagram.com/farah.talaat.f/" target="_blank" class="social-pill">
+                            <i class="fa-solid fa-user-tie"></i> Farah Talaat
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form -->
+                <form class="contact-form" id="custom-order-form">
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="e.g. Leila Ahmed" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone or WhatsApp</label>
+                            <input type="tel" name="phone" class="form-control" placeholder="+20 100 000 0000" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" class="form-control" placeholder="name@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Bag Style or Topic</label>
+                        <select name="subject" class="form-control">
+                            <option value="Custom Bag Inquiry">Custom Bespoke Bag</option>
+                            <option value="Classic Artisan Handbag">Classic Artisan Handbag</option>
+                            <option value="Modern Chic Carry Bag">Modern Chic Carry Bag</option>
+                            <option value="Celestial Pearl Knot Bag">Celestial Pearl Knot Bag</option>
+                            <option value="Other Inquiries">General Customer Support</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Your Message / Specific Requests</label>
+                        <textarea name="message" class="form-control" placeholder="Tell us about your desired color, dimensions, or event date..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="align-self: flex-start;">
+                        <i class="fa-solid fa-paper-plane"></i> Send Inquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIP Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-box">
+                <span class="section-subtitle" style="color:var(--accent);">Join The Chic Circle</span>
+                <h2 class="section-title">Unlock 10% Off Your First Handcrafted Piece</h2>
+                <p>Subscribe to receive preview access to limited capsule releases, artisan stories, and VIP invitations.</p>
+                
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>Carry Chic</h2>
+                    <p>
+                        High-end slow fashion boutique dedicated to the preservation of authentic handcrafting. Timeless bags created with care, sustainability, and elegance.
+                    </p>
+                    <div class="footer-social-icons">
+                        <a href="https://www.instagram.com/_carry_chic/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.me/" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://pinterest.com" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Collections</h4>
+                    <ul class="footer-links">
+                        <li><a href="product.html">Classic Artisan Bag</a></li>
+                        <li><a href="product2.html">Modern Chic Bag</a></li>
+                        <li><a href="product3.html">Boho Woven Tote</a></li>
+                        <li><a href="product4.html">Vintage Bloom Bag</a></li>
+                        <li><a href="product5.html">Celestial Pearl Knot</a></li>
+                        <li><a href="product6.html">Velvet Mirage Clutch</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="carrychic.html">Home</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#reviews">Patron Reviews</a></li>
+                        <li><a href="#faq">Care Guide & FAQ</a></li>
+                        <li><a href="#contact">Custom Orders</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Customer Concierge</h4>
+                    <ul class="footer-links">
+                        <li><a href="#faq">Shipping & Returns</a></li>
+                        <li><a href="#contact">WhatsApp Assistance</a></li>
+                        <li><a href="#contact">Studio Inquiries</a></li>
+                        <li><a href="#">Privacy & Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Carry Chic by Farah Talaat. Handcrafted with pride. All rights reserved.</div>
+                <div>Designed for Timeless Luxury</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Slide-out Shopping Cart Drawer -->
+    <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Cart Drawer">
+        <div class="cart-drawer-header">
+            <h3><i class="fa-solid fa-bag-shopping"></i> Shopping Bag</h3>
+            <button class="close-drawer-btn" id="close-drawer-btn" aria-label="Close cart">&times;</button>
+        </div>
+
+        <div class="free-shipping-progress">
+            <span id="free-shipping-text">Add <strong>$80</strong> more to unlock <strong>FREE Shipping</strong>!</span>
+            <div class="progress-track">
+                <div class="progress-fill" id="free-shipping-fill"></div>
+            </div>
+        </div>
+
+        <div class="cart-items-container" id="cart-items-container">
+            <!-- Cart items dynamically rendered via carrychic.js -->
+        </div>
+
+        <div class="cart-drawer-footer">
+            <div class="cart-summary-row">
+                <span>Subtotal</span>
+                <span id="cart-subtotal" style="font-weight:600;">$0.00</span>
+            </div>
+            <div class="cart-summary-row">
+                <span>Estimated Shipping</span>
+                <span id="cart-shipping">$0.00</span>
+            </div>
+            <div class="cart-summary-row cart-summary-total">
+                <span>Total Amount</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+
+            <button class="checkout-btn" id="checkout-drawer-btn">
+                <i class="fa-solid fa-lock"></i> Proceed to Checkout
+            </button>
+        </div>
+    </aside>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal-overlay" id="checkout-modal-overlay">
+        <div class="checkout-modal-card">
+            <button class="close-modal-btn" id="close-modal-btn">&times;</button>
+            <h3 style="font-family:var(--font-serif); font-size:2rem; color:var(--primary); margin-bottom:6px;">Complete Your Order</h3>
+            <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:20px;">Review your items and enter delivery details to place your order.</p>
+
+            <div style="background:var(--bg-surface); border-radius:var(--radius-md); padding:16px; margin-bottom:20px;">
+                <h5 style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent); margin-bottom:10px;">Order Summary</h5>
+                <div id="modal-summary-items"></div>
+                <div style="display:flex; justify-content:space-between; margin-top:10px; padding-top:10px; border-top:1px dashed var(--border); font-weight:700; font-size:1.1rem; color:var(--primary);">
+                    <span>Total Due:</span>
+                    <span id="modal-total-amount">$0.00</span>
+                </div>
+            </div>
+
+            <form id="checkout-order-form">
+                <div class="form-group" style="margin-bottom:14px;">
+                    <label>Full Name</label>
+                    <input type="text" name="customer_name" class="form-control" placeholder="Your full name" required>
+                </div>
+
+                <div class="form-group-row" style="margin-bottom:14px;">
+                    <div class="form-group">
+                        <label>Phone / WhatsApp</label>
+                        <input type="tel" name="customer_phone" class="form-control" placeholder="+20 100 000 0000" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Delivery City</label>
+                        <input type="text" name="customer_city" class="form-control" placeholder="Cairo, Giza, Alex..." required>
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-bottom:14px;">
+                    <label>Detailed Shipping Address</label>
+                    <input type="text" name="customer_address" class="form-control" placeholder="Street, Building, Apartment..." required>
+                </div>
+
+                <div class="form-group" style="margin-bottom:14px;">
+                    <label>Payment Method</label>
+                    <select name="payment_method" class="form-control">
+                        <option value="Cash on Delivery">Cash on Delivery (COD)</option>
+                        <option value="InstaPay / Mobile Wallet">InstaPay / Mobile Wallet</option>
+                        <option value="Credit / Debit Card">Credit / Debit Card</option>
+                    </select>
+                </div>
+
+                <div class="form-group" style="margin-bottom:20px;">
+                    <label>Special Instructions / Custom Notes (Optional)</label>
+                    <input type="text" name="customer_notes" class="form-control" placeholder="e.g. Gift note, custom thread color...">
+                </div>
+
+                <button type="submit" class="checkout-btn" style="margin-top:0;">
+                    <i class="fa-solid fa-check"></i> Confirm & Place Order
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="carrychic.js"></script>
+</body>
+</html>
